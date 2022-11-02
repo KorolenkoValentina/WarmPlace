@@ -1,3 +1,15 @@
+$(document).ready(function () {
+  $("a.scrollto").click (function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+    scrollTop: destination
+  }, 1000);
+  return false;
+  });
+});
+
+
 $('.slider').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
 
   $(".num").text(slick.slickCurrentSlide() + 1)
