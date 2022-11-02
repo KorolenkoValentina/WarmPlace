@@ -7,118 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WarmPlace</title>
     <link rel="shortcut icon" href="img/logo-head.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;400;600&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="subnavbar">
+    <header class="header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="logo">
-                  <a href="index.html">
-                    <img src="./img/logo.svg" class="img-fluid" alt="logo">
-                  </a> 
-                </div>
+            <nav class="navbar navbar-expand-lg navbar-light ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Главная</a>
+                    <a href="main.html">
+                        <img src="./img/logo.svg" class="img-fluid" alt="logo">
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Наши работы</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Как мы работаем
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Оформление заказа</a></li>
-                                    <li><a class="dropdown-item" href="#">Доставка вашего товара</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Получение товара и установка</a></li>
-                                </ul>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link home-item scrollto" href="#Home">Главная</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Контакты</a>
+                                <a class="nav-link scrollto active" aria-current="page" href="#Our-Works">Наши
+                                    работы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scrollto" href="#How-we-work"> Как мы работаем</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scrollto" href="#Contact">Контакты</a>
                             </li>
                         </ul>
-                        <form class="d-flex">
-                            <button class="btn btn-outline-success" type="submit">Обратная связь</button>
-                        </form>
-
+                        <button class="btn" type="submit">Обратная связь</button>
                     </div>
                 </div>
             </nav>
-
         </div>
     </header>
-    <div class="baner">
-        <div class="baner-container">
+
+    <div class="baner" id="Home">
+        <div class="container">
             <div class="baner-content">
                 <nav>
                     <ul id="demo-nav-menu">
                         <li class="demo-nav-menu-item"> <a href="#"> КАМИНЫ </a></li>
-                        <li class="demo-nav-menu-item"> <a href="#"> ПЕЧИ  </a></li>
-                        <li class="demo-nav-menu-item"> <a href="#"> МАНГАЛЫ  </a></li>
+                        <li class="demo-nav-menu-item"> <a href="#"> ПЕЧИ </a></li>
+                        <li class="demo-nav-menu-item"> <a href="#"> МАНГАЛЫ </a></li>
                         <li class="demo-nav-menu-item"> <a href="#"> БАРБЕКЮ </a></li>
                     </ul>
                 </nav>
-                <div class="section-title">Изготовление каминов, печей и мангалов</div>
-                <a href="#" target="_blank" class=" btn btn-primary">Заказать сейчас</a>
+                <h2>Изготовление каминов, печей и мангалов</h2>
+                <a href="#" target="_blank" class=" btn">Заказать сейчас</a>
             </div>
         </div>
     </div>
-    <section class="about-us">
+    <section class="about-us" id="About-Us">
         <div class="container">
-            <h2 class="title">О нас</h2>
+            <div class="title">О нас</div>
             <div class="about-us-item">
                 <div class="img-box">
                     <img src="./img/about-us-first.png" class="img-fluid " alt="about-us-first">
                 </div>
                 <div class="text-box">
-                    <p >Наша компания Warm Place занимается изготовлением
+                    <p>Наша компания Warm Place занимается изготовлением
                         каминов, печей, мангалов и грилей для барбекю с прямой доставкой и установкой на дом.</p>
-                      <p> Наши изделия отличаются от конкурентов высоким качеством материала, из которого мы
+                    <p> Наши изделия отличаются от конкурентов высоким качеством материала, из которого мы
                         изготавливаем наше оборудование и также демократичными ценами, которые вполне устраивают наших
                         довольных покупателем,
                         потому залог успеха
                         Warm Place - высокое качество за небольшую цену.</p>
-                        <p>  Также мы предоставляем услуги доставки нашего оборудования в регионы, наши курьеры гарантируют целостность и сохранность оборудования к моменту 
-                            его доставки и дальнейшей установки.
-                            <span id="dots"></span>
-                        </p>
-                        <p>
-                        <span id="more" >Оборудования к моменту его доставки и дальнейшей
+                    <p> Также мы предоставляем услуги доставки нашего оборудования в регионы, наши курьеры гарантируют
+                        целостность и сохранность оборудования к моменту
+                        его доставки и дальнейшей установки.
+                        <span id="dots"></span>
+                    </p>
+                    <p>
+                        <span id="more">Оборудования к моменту его доставки и дальнейшей
                             установки.</span>
-                        </p>
-                        <div class="read-next">
-                            <button onclick="read_more()" id="btn-read">Читать далее</button>
-                        </div>
+                    </p>
+                    <div class="read-next">
+                        <button onclick="read_more()" id="btn-read">Читать далее</button>
+                    </div>
                 </div>
                 <div class="second-img">
                     <img src="./img/about-us-second.svg" class="img-fluid" alt="about-us-second">
                 </div>
             </div>
-
         </div>
     </section>
-    <section class="our-work">
-        <div class="slider-container">
-            <h2 class="title">Наши <span>работы</span></h2>
+    <section class="our-work" id="Our-Works">
+        <div class="container">
+            <div class="title">Наши <span>работы</span></div>
             <div class="our-works-slider">
                 <div class="our-works-slider__item">
                     <img src="./img/our-works-first.png" class="img-fluid" alt="our-works-first">
@@ -155,25 +137,32 @@
             </div>
         </div>
     </section>
-    <section class="how-we-work">
+    <section class="how-we-work" id="How-we-work">
         <div class="container">
-            <h2 class="title"> Как <span>мы</span> работаем</h2>
-            <div class="examples">
-                <div class="example">
-                    <h3 class="example-title">1.Оформление <br> заказа</h3>
-                    <p class="example-subtitle">Вы оформляете ваш заказ, а позже мы перезваниваем вам, и мы
+            <div class="title"> Как <span>мы</span> работаем</div>
+            <div class="how-we-work__content d-flex justify-content-between">
+                <div class="how-we-work__item">
+                    <img src="./img/icon-1.png" alt="icon" class="img-fluid">
+                    <h3> 1.Оформление <br> заказа</h3>
+                    <p class="subtitle">Вы оформляете ваш заказ, а позже мы перезваниваем вам, и мы
                         уже согласовываем все детали.</p>
                 </div>
-                <div class="example example-vector-1"></div>
-                <div class="example example-delivery">
-                    <h3 class="example-title">2. Доставка вашего товара</h3>
-                    <p class="example-subtitle">Мы доставим ваш заказ в кратчайшие сроки, а сам товар вы уже
+                <div class="how-we-work__item item-vector">
+                    <img src="./img/vector-1.png" alt="vector" class="img-fluid">
+                </div>
+                <div class="how-we-work__item">
+                    <img src="./img/icon-2.png" alt="icon" class="img-fluid">
+                    <h3> 2. Доставка вашего товара</h3>
+                    <p class="subtitle">Мы доставим ваш заказ в кратчайшие сроки, а сам товар вы уже
                         сможете забрать сами, либо курьер доставит вам на дом.</p>
                 </div>
-                <div class="example example-vector-2"></div>
-                <div class="example example-recive ">
-                    <h3 class="example-title">3. Получение товара и установка</h3>
-                    <p class="example-subtitle">Вы забираете свой товар на почте, либо наши работники вам
+                <div class="how-we-work__item item-vector">
+                    <img src="./img/vector-2.png" alt="vector" class="img-fluid">
+                </div>
+                <div class="how-we-work__item">
+                    <img src="./img/icon-3.png" alt="icon" class="img-fluid">
+                    <h3>3. Получение товара и установка</h3>
+                    <p class="subtitle">Вы забираете свой товар на почте, либо наши работники вам
                         его доставят и установят.</p>
                 </div>
             </div>
@@ -181,11 +170,11 @@
     </section>
     <section class="reviews">
         <div class="container">
-            <h2 class="title"><span>Отзывы</span> клиентов</h2>
-            <div class="row">
-                <div class="col-6 ">
+            <div class="title"><span>Отзывы</span> клиентов</div>
+            <div class="reviews-card d-flex flex-wrap ">
+                <div class="reviews-card__item ">
+                    <img src="./img/photo-1.png" alt="avatar" class="img-fluid">
                     <div class="reviews-content">
-                        <img src="./img/photo-1.png" alt="avatar">
                         <p class="reviews-content-title">Предприниматель</p>
                         <p class="reviews-content-name">Валерий Петренко</p>
                         <p class="reviews-content-post">Благодарю компанию Warm place за качественный камин, который
@@ -197,12 +186,12 @@
                             <li><a href="#" class="vk" target="_blank" rel="noopener"></a></li>
                             <li><a href="#" class="telegram" target="_blank" rel="noopener"></a></li>
                         </ul>
-
                     </div>
                 </div>
-                <div class="col-6 ">
+
+                <div class="reviews-card__item ">
+                    <img src="./img/photo-2.png" alt="avatar">
                     <div class="reviews-content">
-                        <img src="./img/photo-2.png" alt="avatar">
                         <p class="reviews-content-title">Дизайнер интерьера</p>
                         <p class="reviews-content-name">Анастасия Кравец</p>
                         <p class="reviews-content-post">Недавно приобрела у вас гриль и мангал себе на дачу, и могу
@@ -213,12 +202,11 @@
                             <li><a href="#" class="vk" target="_blank" rel="noopener"></a></li>
                             <li><a href="#" class="insta" target="_blank" rel="noopener"></a></li>
                         </ul>
-
                     </div>
                 </div>
-                <div class="col-6 ">
+                <div class="reviews-card__item">
+                    <img src="./img/photo-3.png" alt="avatar">
                     <div class="reviews-content">
-                        <img src="./img/photo-3.png" alt="avatar">
                         <p class="reviews-content-title">Бухгалтер</p>
                         <p class="reviews-content-name">Михаил Дмитриенко</p>
                         <p class="reviews-content-post">Честно говоря, я был приятно удивлен таким быстрым срокам
@@ -232,9 +220,9 @@
 
                     </div>
                 </div>
-                <div class="col-6 forth-card">
+                <div class="reviews-card__item  ">
+                    <img src="./img/photo-4.png" alt="avatar">
                     <div class="reviews-content">
-                        <img src="./img/photo-4.png" alt="avatar">
                         <p class="reviews-content-title">Владелец сети ресторанов</p>
                         <p class="reviews-content-name">Владимир Ткачев</p>
                         <p class="reviews-content-post">Неделю назад стокнулся с проблемой приобретения пары печей
@@ -254,73 +242,67 @@
     </section>
     <section class="contact-us">
         <div class="container">
-            <h2 class="title"> <span>Свяжитесь</span> с нами </h2>
+            <div class="title"> <span>Свяжитесь</span> с нами </div>
             <form action="#" class="form">
                 <input type="text" placeholder="ФИО" name="name" class="input" required>
                 <input type="email" placeholder="E-mail или номер телефона" name="E-mail" class="input" required><br>
                 <textarea name="message" placeholder="Текст сообщения..."></textarea><br>
-                <button type="submit" class=" btn btn-primary btn-contact">Отправить</button>
+                <button type="submit" class=" btn">Отправить</button>
             </form>
-
         </div>
     </section>
-    <footer class="our-contacts">
-        <div class="first-part">
-            <div class="container">
-                <div class="details">
-                    <div class="img-map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.8942773457215!2d37.692316!3d55.777708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5357a570f30bd%3A0xb672ec2fc5c34b44!2z0YPQuy4g0KTRgNC40LTRgNC40YXQsCDQrdC90LPQtdC70YzRgdCwLCA2Nywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNTA4Mg!5e0!3m2!1sru!2sua!4v1653384613507!5m2!1sru!2sua"
-                            width="550" height="240" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="detail-addres">
-                        <p class="detail-title">Контактные данные</p>
-                        <p class="detail-subtitle">Адрес офиса: г. Москва,<br>
-                            ул. Энгельса, 67, корпус 5
-                            <br>
-                            <br>
-                            Адрес офиса: г. Новосибирск,<br>
+    <section class="our-contacts" id="Contact">
+        <div class="container">
+            <div class="our-contacts__content d-flex justify-content-between">
+                <div class="img-map ">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.8942773457215!2d37.692316!3d55.777708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5357a570f30bd%3A0xb672ec2fc5c34b44!2z0YPQuy4g0KTRgNC40LTRgNC40YXQsCDQrdC90LPQtdC70YzRgdCwLCA2Nywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNTA4Mg!5e0!3m2!1sru!2sua!4v1653384613507!5m2!1sru!2sua"
+                        width="550" height="240" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="our-contacts__box d-flex justify-content-evenly">
+                    <div class="our-contacts__item item-first ">
+                        <p class="our-contacts__item-title">Контактные данные</p>
+                        <p class="our-contacts__item-subtitle">Адрес офиса: г. Москва, <br>
+                            ул. Энгельса, 67, корпус 5 </p>
+                        <p class="our-contacts__item-subtitle"> Адрес офиса: г. Новосибирск,<br>
                             ул. Котельная, 21A</p>
                     </div>
-                    <div class=" detail-contacts">
-                        <p class="detail-title">Горячая линия</p>
-                        <p class="detail-subtitle">Тел.: +7 XX XXX XX XX <br>
-                            Факс: +7 XX XXX XX XX
-                            <br>
-                            <br>
-                            Тел.: +7 XX XXX XX XX <br>
+                    <div class=" our-contacts__item">
+                        <p class="our-contacts__item-title">Горячая линия</p>
+                        <p class="our-contacts__item-subtitle">Тел.: +7 XX XXX XX XX <br>
+                            Факс: +7 XX XXX XX XX </p>
+                        <p class="our-contacts__item-subtitle"> Тел.: +7 XX XXX XX XX <br>
                             Факс: +7 XX XXX XX XX</p>
                     </div>
-                    <div class=" detail-social">
-                        <p class="detail-title">Мы в соцсетях</p>
-                        <ul class="social-icons">
-                            <li><a class="social-icon-insta" href="#" target="_blank" rel="noopener"></a></li>
-                            <li><a class="social-icon-fb" href="#" target="_blank" rel="noopener"></a></li>
-                            <li><a class="social-icon-vk" href="#" target="_blank" rel="noopener"></a></li>
-                        </ul>
-                    </div>
+                </div>
+                <div class=" our-contacts__item item-social">
+                    <p class="our-contacts__item-title">Мы в соцсетях</p>
+                    <ul class="social-icons">
+                        <li><a class="social-icon-insta" href="#" target="_blank" rel="noopener"></a></li>
+                        <li><a class="social-icon-fb" href="#" target="_blank" rel="noopener"></a></li>
+                        <li><a class="social-icon-vk" href="#" target="_blank" rel="noopener"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </section>
+    <footer class="footer-section">
         <div class="container">
-            <p class="flow-title">© Warm place | Все права защищены. | 2021</p>
-                <ul id="demo-nav">
-                    <li> <a href="#">Главная</a></li>
-                    <li> <a href="#">О нас </a></li>
-                    <li> <a href="#">Наши работы </a></li>
-                    <li> <a href="#">Как мы работаем</a></li>
-                    <li> <a href="#">Контакты</a></li>
-                </ul>
+            <p class="our-contacts__item-title">© Warm place | Все права защищены. | 2021</p>
+            <ul id="demo-nav-menu">
+                <li class="demo-nav-menu-item"> <a href="#Home">Главная</a></li>
+                <li class="demo-nav-menu-item"> <a href="#About-Us">О нас </a></li>
+                <li class="demo-nav-menu-item"> <a href="#Our-Works">Наши работы </a></li>
+                <li class="demo-nav-menu-item"> <a href="#How-we-work">Как мы работаем</a></li>
+                <li class="demo-nav-menu-item"> <a href="#Contact">Контакты</a></li>
+            </ul>
 
             <div class="scrollup">
                 <a id="upbutton"></a>
             </div>
         </div>
     </footer>
-
-
-
     <script src="js/jQuery-v3.6.0.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/slick.min.js"></script>
