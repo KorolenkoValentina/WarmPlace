@@ -24,11 +24,11 @@ function read_more() {
   var btnText = document.getElementById("btn-read");
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "Читать далее";
+    btnText.innerHTML = "Read More";
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "Свернуть";
+    btnText.innerHTML = "Show Less";
     moreText.style.display = "flex";
   }
 }
